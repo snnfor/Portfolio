@@ -279,6 +279,7 @@ color: white;
 
 .about-containers, .about-details-container {
     border-radius: 2rem;
+    display: flex;
 }
 
 .about-pic {
@@ -293,32 +294,30 @@ color: white;
 
 .details-container {
     padding: 1.5rem;
-    flex: 1;
-    background: white;
+    flex: 10;
     border-radius: 2rem;
     border: rgb(201, 119, 60) 0.1rem solid;
     border-color: rgb(201, 119, 60);
     text-align: center;
+    margin: 2rem;
+    width: 50%;
 }
 
 .section-container {
     gap: 4rem;
     height: 80%;
-    background-color: orange;
 }
 
 .section__pic-container {
     height: 400px;
     width: 400px;
     margin: auto 0;
-    background-color: orange;
 }
 
 /* EXPERIENCE SECTION */
 
 #experience {
     position: relative;
-    background-color: orange;
 }
 
 .experience-sub-title {
@@ -362,7 +361,7 @@ article .icon {
 
 .color-container {
     border-color: rgb(201, 119, 60);
-    background: rgb(53, 53, 53);
+    background: rgb(245, 208, 166);
 }
 
 .project-img {
