@@ -290,6 +290,7 @@ color: white;
     position: absolute; /* Arrows use the position "relative" so whichever section I want an arrow, make sure its "relative" to that position*/
     right: -5rem;
     bottom: 2.5rem;
+    margin-top: -5rem;
 }
 
 .details-container {
@@ -318,6 +319,7 @@ color: white;
 
 #experience {
     position: relative;
+    margin-top: 5rem;
 }
 
 .experience-sub-title {
@@ -327,10 +329,11 @@ color: white;
     margin-bottom: 2rem;
 }
 
-.experience-details-container{
+.experience-details-container {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    margin-top: 5rem;
 }
 
 .article-container {
@@ -357,6 +360,8 @@ article .icon {
 
 #projects {
     position: relative;
+    margin-top: 5rem;
+    margin: auto 2rem;
 }
 
 .color-container {
@@ -397,8 +402,7 @@ article .icon {
     border-color: rgb(201, 119, 60);
     background: (250, 250, 250);
     margin: auto 1rem; 
-    padding: .5rem;
-
+    padding: auto 5rem;
 }
 
 .contact-info-container {
@@ -406,7 +410,8 @@ article .icon {
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
-    margin: auto 3rem;
+    margin: auto;
+    padding: auto .5rem;
 }
 
 .contact-info-container p {
@@ -418,6 +423,13 @@ article .icon {
     justify-content: center;
     height: 3rem;
     margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+.contact-icony {
+    margin-bottom: 1rem;
+    height: 2.5rem;
+    cursor: pointer;
 }
 
 .email-icon {
