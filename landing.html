@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Church Management System</title>
+    <link rel="stylesheet" href="landing.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1>Church Management System</h1>
+            <nav>
+                <a href="#features">Features</a>
+                <a href="#pricing">Pricing</a>
+                <a href="#about">About Us</a>
+                <a href="#contact">Contact Us</a>
+                <a href="#login" class="btn-login">Login</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero parallax">
+        <div class="hero-content">
+            <h2>Empowering Your Church with Innovative Solutions</h2>
+            <p>Streamline your operations, enhance communication, and foster community with our state-of-the-art Church Management System.</p>
+            <a href="#pricing" class="btn-primary">Explore Pricing</a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2>Our Features</h2>
+            <div class="grid">
+                <div class="feature">
+                    <img src="images/calendar.svg" alt="Calendar" class="icon">
+                    <h3>Smart Calendars</h3>
+                    <p>Manage your events with ease and never miss an important date.</p>
+                </div>
+                <div class="feature">
+                    <img src="images/analytics.svg" alt="Analytics" class="icon">
+                    <h3>Advanced Analytics</h3>
+                    <p>Gain insights into your church activities with detailed reports and stats.</p>
+                </div>
+                <div class="feature">
+                    <img src="images/chat.svg" alt="Chat" class="icon">
+                    <h3>Seamless Communication</h3>
+                    <p>Stay connected with members through integrated messaging and notifications.</p>
+                </div>
+                <div class="feature">
+                    <img src="images/volunteers.svg" alt="Volunteers" class="icon">
+                    <h3>Volunteer Management</h3>
+                    <p>Organize and coordinate volunteers effortlessly.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <h2>Pricing</h2>
+            <div class="pricing-tiers">
+                <div class="tier">
+                    <h3>Basic Plan</h3>
+                    <p>$29/month</p>
+                    <ul>
+                        <li>Access to Core Features</li>
+                        <li>Basic Support</li>
+                        <li>Community Access</li>
+                    </ul>
+                    <a href="#login" class="btn-secondary">Get Started</a>
+                </div>
+                <div class="tier">
+                    <h3>Pro Plan</h3>
+                    <p>$59/month</p>
+                    <ul>
+                        <li>Advanced Features</li>
+                        <li>Priority Support</li>
+                        <li>Integration Options</li>
+                    </ul>
+                    <a href="#login" class="btn-secondary">Get Started</a>
+                </div>
+                <div class="tier">
+                    <h3>Enterprise Plan</h3>
+                    <p>$99/month</p>
+                    <ul>
+                        <li>All Features</li>
+                        <li>24/7 Support</li>
+                        <li>Custom Solutions</li>
+                    </ul>
+                    <a href="#login" class="btn-secondary">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Our Mission</h3>
+                    <br>
+                    <p id="p1">At Church Management System, we are dedicated to transforming how churches manage their operations. Our mission is to empower religious communities with tools that enhance connectivity, streamline workflows, and foster a thriving environment for spiritual growth.</p>
+                    <br>
+                    <p id="p2">At ChMS, our mission is to simplify and enhance church management through innovative technology. We aim to reduce burnout, support pastoral care, and track discipleship effectively. Our platform integrates seamlessly with your existing workflows, ensuring a smooth and user-friendly experience.</p>
+                    <br>
+                    <h3>Why Choose Us?</h3>
+                    <br>
+                    <ul>
+                        <li>Innovative Technology: Cutting-edge solutions that adapt to your needs.</li>
+                        <li>Exceptional Support: Our team is here to assist you every step of the way.</li>
+                        <li>Community Focused: Solutions designed to bring your community closer together.</li>
+                    </ul>
+                    <br>
+                    <p id="p3">We offer a unique combination of features tailored to your church's needs. Our platform is designed to save you time, enhance your administrative capabilities, and foster better community engagement. Join us and experience the difference!</p>
+                </div>
+                <div class="about-image">
+                    <img src="assets/cross.jpg" alt="About Us">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form action="#" method="post">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Login Section -->
+    <section id="login" class="login-section">
+        <div class="container">
+            <h2>Login to Your Account</h2>
+            <form action="dashboard.html" method="post">
+                <input type="email" placeholder="Email Address" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Chat Popup -->
+    <div class="chat-popup" id="chat-popup">
+        <header>
+            <span>Chat with Us</span>
+            <span class="close" onclick="toggleChatPopup()">×</span>
+        </header>
+        <div class="messages">
+            <!-- Chat messages will appear here -->
+        </div>
+        <footer>
+            <input type="text" placeholder="Type a message">
+            <button onclick="sendMessage()">Send</button>
+        </footer>
+    </div>
+
+    <!-- Social Icons -->
+    <div class="social-icons">
+        <a href="#" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Church Management System. All Rights Reserved.</p>
+    </footer>
+</body>
+<script src="landing.js"></script>
+</html>
